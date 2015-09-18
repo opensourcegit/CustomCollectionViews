@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33FC5ED11BAC2A9E00CC8230 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC5ED01BAC2A9E00CC8230 /* BasicCollectionViewController.swift */; };
+		33FC5ED51BAC2B1600CC8230 /* BasicCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC5ED41BAC2B1600CC8230 /* BasicCollectionCell.swift */; };
+		33FC5ED71BAC2B3500CC8230 /* BasicCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FC5ED61BAC2B3500CC8230 /* BasicCollectionCell.xib */; };
+		33FC5ED91BAC2F0000CC8230 /* BasicCollectionSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FC5ED81BAC2F0000CC8230 /* BasicCollectionSection.xib */; };
+		33FC5EDB1BAC2F1400CC8230 /* BasicCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC5EDA1BAC2F1400CC8230 /* BasicCollectionSection.swift */; };
+		33FC5EDD1BAC2F9900CC8230 /* SimpleCollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC5EDC1BAC2F9900CC8230 /* SimpleCollectionCellModel.swift */; };
+		33FC5EDF1BAC33BD00CC8230 /* SimpleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FC5EDE1BAC33BD00CC8230 /* SimpleCollectionView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +37,13 @@
 /* Begin PBXFileReference section */
 		17CC7A5DC40A6BABB515E996 /* Pods_CustomCollectionViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCollectionViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2266A340E6A10D59992BDCEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		33FC5ED01BAC2A9E00CC8230 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
+		33FC5ED41BAC2B1600CC8230 /* BasicCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionCell.swift; sourceTree = "<group>"; };
+		33FC5ED61BAC2B3500CC8230 /* BasicCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCollectionCell.xib; sourceTree = "<group>"; };
+		33FC5ED81BAC2F0000CC8230 /* BasicCollectionSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicCollectionSection.xib; sourceTree = "<group>"; };
+		33FC5EDA1BAC2F1400CC8230 /* BasicCollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCollectionSection.swift; sourceTree = "<group>"; };
+		33FC5EDC1BAC2F9900CC8230 /* SimpleCollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionCellModel.swift; sourceTree = "<group>"; };
+		33FC5EDE1BAC33BD00CC8230 /* SimpleCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCollectionView.swift; sourceTree = "<group>"; };
 		402A1115BEDB50513A629588 /* CustomCollectionViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomCollectionViews.podspec; path = ../CustomCollectionViews.podspec; sourceTree = "<group>"; };
 		4B4CF38D7942BD403B48E364 /* Pods-CustomCollectionViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCollectionViews_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomCollectionViews_Example/Pods-CustomCollectionViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CustomCollectionViews_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViews_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +94,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		33FC5ECF1BAC2A5300CC8230 /* basic collection view test */ = {
+			isa = PBXGroup;
+			children = (
+				33FC5ED21BAC2ACF00CC8230 /* models */,
+				33FC5ED01BAC2A9E00CC8230 /* BasicCollectionViewController.swift */,
+			);
+			name = "basic collection view test";
+			sourceTree = "<group>";
+		};
+		33FC5ED21BAC2ACF00CC8230 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				33FC5EDC1BAC2F9900CC8230 /* SimpleCollectionCellModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		33FC5ED31BAC2B0200CC8230 /* cell views */ = {
+			isa = PBXGroup;
+			children = (
+				33FC5ED41BAC2B1600CC8230 /* BasicCollectionCell.swift */,
+				33FC5ED61BAC2B3500CC8230 /* BasicCollectionCell.xib */,
+				33FC5ED81BAC2F0000CC8230 /* BasicCollectionSection.xib */,
+				33FC5EDA1BAC2F1400CC8230 /* BasicCollectionSection.swift */,
+			);
+			name = "cell views";
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +146,15 @@
 		607FACD21AFB9204008FA782 /* Example for CustomCollectionViews */ = {
 			isa = PBXGroup;
 			children = (
+				33FC5ED31BAC2B0200CC8230 /* cell views */,
+				33FC5ECF1BAC2A5300CC8230 /* basic collection view test */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				33FC5EDE1BAC33BD00CC8230 /* SimpleCollectionView.swift */,
 			);
 			name = "Example for CustomCollectionViews";
 			path = CustomCollectionViews;
@@ -245,8 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FC5ED91BAC2F0000CC8230 /* BasicCollectionSection.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				33FC5ED71BAC2B3500CC8230 /* BasicCollectionCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FC5EDF1BAC33BD00CC8230 /* SimpleCollectionView.swift in Sources */,
+				33FC5EDD1BAC2F9900CC8230 /* SimpleCollectionCellModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				33FC5EDB1BAC2F1400CC8230 /* BasicCollectionSection.swift in Sources */,
+				33FC5ED11BAC2A9E00CC8230 /* BasicCollectionViewController.swift in Sources */,
+				33FC5ED51BAC2B1600CC8230 /* BasicCollectionCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

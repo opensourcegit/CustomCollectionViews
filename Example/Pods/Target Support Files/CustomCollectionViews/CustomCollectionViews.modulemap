@@ -1,0 +1,6 @@
+framework module CustomCollectionViews {
+  umbrella header "CustomCollectionViews-umbrella.h"
+
+  export *
+  module * { export * }
+}

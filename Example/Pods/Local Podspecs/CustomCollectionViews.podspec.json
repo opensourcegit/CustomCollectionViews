@@ -1,0 +1,25 @@
+{
+  "name": "CustomCollectionViews",
+  "version": "0.1.0",
+  "summary": "A short description of CustomCollectionViews.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CustomCollectionViews",
+  "license": "MIT",
+  "authors": {
+    "vikas goyal": "vikas.goyal@webvirtue.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CustomCollectionViews.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "CustomCollectionViews": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

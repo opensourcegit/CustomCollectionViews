@@ -1,0 +1,14 @@
+PODS:
+  - CustomCollectionViews (0.1.0)
+
+DEPENDENCIES:
+  - CustomCollectionViews (from `../`)
+
+EXTERNAL SOURCES:
+  CustomCollectionViews:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CustomCollectionViews: 72b20274810a790864d1c56a6b70c0e0a43be576
+
+COCOAPODS: 0.38.2
