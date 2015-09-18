@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/CustomCollectionViews"
+  s.homepage         = "https://github.com/opensourcegit/CustomCollectionViews"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "vikas goyal" => "vikas.goyal@webvirtue.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/CustomCollectionViews.git", :tag => s.version.to_s }
+  s.author           = { "opensourcegit" => "opensourcegit@gmail.com" }
+  s.source           = { :git => "https://github.com/opensourcegit/CustomCollectionViews.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'

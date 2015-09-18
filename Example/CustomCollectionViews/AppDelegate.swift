@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CustomCollectionViews
 //
-//  Created by vikas goyal on 09/18/2015.
-//  Copyright (c) 2015 vikas goyal. All rights reserved.
+//  Created by opensourcegit on 09/18/2015.
+//  Copyright (c) 2015 opensourcegit. All rights reserved.
 //
 
 import UIKit
