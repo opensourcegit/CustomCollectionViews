@@ -12,7 +12,7 @@ import UIKit
 
 public class BaseCollectionView: UICollectionView {
     
-    private var data = [BaseCollectionSectionModel]();
+    var data = [BaseCollectionSectionModel]();
     
    public func setCollectionViewData(data:[BaseCollectionSectionModel]){
         self.data = data;

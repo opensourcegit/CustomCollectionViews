@@ -10,9 +10,12 @@ import Foundation
 import UIKit
 
 public class BaseCollectionSectionModel {
-   public var items = [BaseCollectionCellModel]();
+    var items = [BaseCollectionCellModel]();
    public var identifer:String? ;
    public var shouldShow:Bool = true;
     public init(){
+    }
+   public func setItems(items:[BaseCollectionCellModel]){
+        self.items = items;
     }
 }
