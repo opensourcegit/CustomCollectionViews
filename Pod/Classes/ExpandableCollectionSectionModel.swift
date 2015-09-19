@@ -32,5 +32,4 @@ public class ExpandableCollectionSectionModel: BaseCollectionSectionModel {
     func numberOfitems()->Int{
         return orginalItems.count;
     }
-    
 }

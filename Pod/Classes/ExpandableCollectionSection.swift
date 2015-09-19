@@ -12,14 +12,16 @@ import UIKit
 protocol ExpandableCollectionSectionCallBack{
     func onClick(sectionView:ExpandableCollectionSection);
 }
-public class ExpandableCollectionSection: UICollectionReusableView {
+public class ExpandableCollectionSection: UICollectionReusableView,ReactiveView {
     var sectionDelegate:ExpandableCollectionSectionCallBack?;
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder);
         setup();
     }
-    
+    func bindViewModel(viewModel: AnyObject) {
+        //implement in child
+    }
     
     func setup(){
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: "onClickSelf");
