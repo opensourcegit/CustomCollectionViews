@@ -23,6 +23,7 @@
 		71CCCBF7F861AC65F72DB3CB2F8A94D4 /* Pods-CustomCollectionViews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7F72CA17A5E663D6AEB870467B9D2E /* Pods-CustomCollectionViews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		853C8204242C0CE5793A2099C2EE5D75 /* CustomCollectionViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2085D4AD76DE7E7389487DADF5F9C39B /* CustomCollectionViews-dummy.m */; };
 		8B30AEFE439A771EEFE58FBD2CD33BDC /* CustomCollectionViews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 982963F3A6BFEAB844378FA69724DA7F /* CustomCollectionViews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9821377A1BAD601100002AE2 /* ExpandableCollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982137791BAD601100002AE2 /* ExpandableCollectionSection.swift */; settings = {ASSET_TAGS = (); }; };
 		A76EEAD5C70549F45BD0A245939A128F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DAFACE5971AE31D86151B94BEB10B4 /* Foundation.framework */; };
 		E298A9B6B58DE9643305D153C949DF4F /* Pods-CustomCollectionViews_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65065686C62D28CAD30BDDA4F957EB73 /* Pods-CustomCollectionViews_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		86217FEE5187E7A72E87F228787FE783 /* CustomCollectionViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomCollectionViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A4F5177A1123FA675D78279F257B7E /* CustomCollectionViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CustomCollectionViews.xcconfig; sourceTree = "<group>"; };
 		9207A5FAA66FEAD7B0E0511BD315F02F /* Pods_CustomCollectionViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCollectionViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		982137791BAD601100002AE2 /* ExpandableCollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableCollectionSection.swift; sourceTree = "<group>"; };
 		982963F3A6BFEAB844378FA69724DA7F /* CustomCollectionViews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CustomCollectionViews-umbrella.h"; sourceTree = "<group>"; };
 		9C0D01F8346325F288A4B082E6867B94 /* Pods-CustomCollectionViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCollectionViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9C4C71B91C096FE00D22A95C1F184BCA /* Pods-CustomCollectionViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CustomCollectionViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				33FC5EE31BAC4A0700CC8230 /* ExpandableCollectionView.swift */,
 				33FC5EE51BAC4A6300CC8230 /* ExpandableCollectionSectionModel.swift */,
+				982137791BAD601100002AE2 /* ExpandableCollectionSection.swift */,
 			);
 			name = expendable;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
@@ -449,6 +453,7 @@
 				33FC5EC81BAC1F8E00CC8230 /* BaseCollectionSectionModel.swift in Sources */,
 				33FC5ECC1BAC235600CC8230 /* CellSizer.swift in Sources */,
 				33FC5ECA1BAC1FEA00CC8230 /* BaseCollectionCellModel.swift in Sources */,
+				9821377A1BAD601100002AE2 /* ExpandableCollectionSection.swift in Sources */,
 				33FC5EC61BAC1EC000CC8230 /* BaseCollecitonCell.swift in Sources */,
 				33FC5EE41BAC4A0700CC8230 /* ExpandableCollectionView.swift in Sources */,
 				853C8204242C0CE5793A2099C2EE5D75 /* CustomCollectionViews-dummy.m in Sources */,

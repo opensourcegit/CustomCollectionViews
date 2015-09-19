@@ -19,9 +19,10 @@ public class CellSizer {
     public func sizeThatFits<T: BaseCollecitonCell>(size: CGSize, viewModel: AnyObject, cellClass: T.Type) -> CGSize {
         let className = NSStringFromClass(cellClass)
         var sizingCell : T? = sizingCells[className] as? T
-        
+        let url = NSURL(fileURLWithPath: className);
+        let pathExtension = url.pathExtension;
         if sizingCell == nil {
-            sizingCell = UINib(nibName: className.pathExtension, bundle: nil).instantiateWithOwner(nil, options: nil)[0] as? T
+            sizingCell = UINib(nibName: pathExtension!, bundle: nil).instantiateWithOwner(nil, options: nil)[0] as? T
             sizingCells[className] = sizingCell
         }
         

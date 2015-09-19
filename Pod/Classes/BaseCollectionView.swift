@@ -17,7 +17,7 @@ public class BaseCollectionView: UICollectionView {
    public func setCollectionViewData(data:[BaseCollectionSectionModel]){
         self.data = data;
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            print("data reload count \(self.data.count)\n")
+            print("data reload count \(self.data.count)\n", terminator: "")
             self.reloadData();
         });
     }
@@ -27,16 +27,16 @@ public class BaseCollectionView: UICollectionView {
         self.setup()
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
             self.setup();
     }
     
-    override public func awakeFromNib() {
-        super.awakeFromNib();
-        self.setup()
-    }
-    
+//    override public func awakeFromNib() {
+//        super.awakeFromNib();
+//        self.setup()
+//    }
+//    
     
     func setup(){
         self.dataSource = self;
@@ -48,7 +48,7 @@ public class BaseCollectionView: UICollectionView {
     public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         let sectionModel = data[section];
         let count = sectionModel.items.count;
-        println("count \(count)");
+        print("count \(count)");
         return count;
     }
     
@@ -59,7 +59,7 @@ public class BaseCollectionView: UICollectionView {
         let cellModel = sectionModel.items[indexPath.item];
         let cellIdentifier = cellModel.dynamicType.cellIdentifier();
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell;
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) ;
         
         if let cell = cell as? ReactiveView{
             cell.bindViewModel(cellModel);

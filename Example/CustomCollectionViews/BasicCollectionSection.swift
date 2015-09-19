@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+import CustomCollectionViews
 
-class BasicCollectionSection: UICollectionReusableView {
+
+class BasicCollectionSection: ExpandableCollectionSection {
     override func awakeFromNib() {
         super.awakeFromNib();
         self.backgroundColor = randomColor();

@@ -29,5 +29,8 @@ public class ExpandableCollectionSectionModel: BaseCollectionSectionModel {
         }
         super.setItems([BaseCollectionCellModel]());
     }
+    func numberOfitems()->Int{
+        return orginalItems.count;
+    }
     
 }
