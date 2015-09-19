@@ -23,7 +23,6 @@ public class ExpandableCollectionSection: UICollectionReusableView {
     
     func setup(){
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: "onClickSelf");
-        
         self.addGestureRecognizer(gestureRecognizer);
     }
     func onClickSelf(){
