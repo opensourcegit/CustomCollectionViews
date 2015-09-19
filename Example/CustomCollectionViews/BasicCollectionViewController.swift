@@ -18,8 +18,6 @@ class BasicCollectionViewController: UIViewController {
         self.collectionView.registerNib(UINib(nibName: SimpleCollectionCellModel.cellIdentifier(), bundle: nil), forCellWithReuseIdentifier: SimpleCollectionCellModel.cellIdentifier());
         self.collectionView.registerNib(UINib(nibName: "BasicCollectionSection", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "BasicCollectionSection");
         
-        let flow = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout;
-        
         let section1 = BaseCollectionSectionModel();
         section1.setItems(getitem(15));
         section1.identifer = "BasicCollectionSection";
@@ -48,7 +46,7 @@ class BasicCollectionViewController: UIViewController {
     }
     func getitem(number:Int)->[SimpleCollectionCellModel]{
         var arrary = Array<SimpleCollectionCellModel>();
-        for index in 0...number{
+        for _ in 0...number{
             arrary.append(SimpleCollectionCellModel());
         }
         return arrary;

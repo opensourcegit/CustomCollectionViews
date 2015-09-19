@@ -50,7 +50,7 @@ class SImpleExpendableVerticalCollectionViewController: UIViewController {
     }
     func getitem(number:Int)->[SimpleCollectionCellModel]{
         var arrary = Array<SimpleCollectionCellModel>();
-        for index in 0...number{
+        for _ in 0...number{
             arrary.append(SimpleCollectionCellModel());
         }
         return arrary;
