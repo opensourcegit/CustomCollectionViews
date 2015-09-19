@@ -18,6 +18,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'CustomCollectionViews', :git => 'https://github.com/opensourcegit/CustomCollectionViews.git'
+OR
 pod 'CustomCollectionViews', :git => 'https://github.com/opensourcegit/CustomCollectionViews.git', :branch => 'swift2'
 ```
 
